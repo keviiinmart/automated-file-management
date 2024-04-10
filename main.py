@@ -2,7 +2,8 @@
 import downloadPathConstant
 
 #import modules
-import os
+import os #allows to open up file locations in local
+import shutil #has functions to move files
 
 #constants
 downloadPath = downloadPathConstant.downloadFolder
@@ -18,12 +19,17 @@ def getListOfFiles(downloadPath):
 	listOfMediaFiles = [files for ext in imageExtension for files in res if ext in files]
 	return listOfMediaFiles
 
-
+def moveFiles(src,dst,file):
+	src = os.path.join(src,file)
+	shutil.copy2(src,dst)
+	
+	
 
 
 def main():
 	files = (getListOfFiles(downloadPath))
-
+	for file in files:
+		moveFiles(downloadPath,mediaPath,file)
 
 
 
