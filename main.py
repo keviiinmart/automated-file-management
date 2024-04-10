@@ -10,19 +10,20 @@ downloadPath = downloadPathConstant.downloadFolder
 mediaPath = downloadPathConstant.mediaFolder
 
 #list of media extensions
-videoExtension = [".WEBM",".MPG",".MP2",".MPEG",".MPE",".MPV",".OGG",".MP4",".M4P",".M4V",".AVI",".WMV",".MOV",".QT",".FLV"]
+videoExtension = ['.webm', '.mpg', '.mp2', '.mpeg', '.mpe', '.mpv', '.ogg', '.mp4', '.m4p', '.m4v', '.avi', '.wmv', '.mov', '.qt', '.flv']
 imageExtension = [".apng",".avif",".gif",".jpg",".jpeg",".jfif",".pjpeg",".pjp",".png",".svg",".webp"]
+extensionList = videoExtension + imageExtension 
+
 
 
 def getListOfFiles(downloadPath):
 	res = [file_path.name for file_path in os.scandir(downloadPath) if os.path.isfile(os.path.join(downloadPath, file_path))]
-	listOfMediaFiles = [files for ext in imageExtension for files in res if ext in files]
+	listOfMediaFiles = [files for ext in extensionList for files in res if ext in files]
 	return listOfMediaFiles
 
 def moveFiles(src,dst,file):
 	src = os.path.join(src,file)
-	shutil.copy2(src,dst)
-	
+	shutil.copy2(src,dst)	
 	
 
 
