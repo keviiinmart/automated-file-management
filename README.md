@@ -42,27 +42,12 @@ For any inquiries, feedback, or assistance, please submit an issue on GitHub. Ou
    Open the `downloadPathConstant.py` file in your text editor and update the contents according to your preferences.
    This file may contain constants or variables related to download paths or file management. Modify them to suit your specific requirements.
 
-Of course! Here's the updated instruction including the installation of `geopy` and `gmplot`:
-
----
-
-### Instructions:
-
-1. **Change the `dowloadPathConstant-example` to `downloadPathConstant.py`:**  
-   Rename the file `dowloadPathConstant-example` to `downloadPathConstant.py`. You can do this using the following command in your terminal or command prompt:
-   ```bash
-   mv dowloadPathConstant-example downloadPathConstant.py
-   ```
-   After renaming the file, you can edit its contents to your preference.
-
-2. **Edit the contents inside `downloadPathConstant.py` to your preference:**  
-   Open the `downloadPathConstant.py` file in your text editor and update the contents according to your preferences. This file may contain constants or variables related to download paths or file management. Modify them to suit your specific requirements.
-
 3. **Install Pillow, Geopy, and gmplot:**  
    To install the required Python libraries, use the following commands in your terminal or command prompt:
    ```bash
    pip install pillow geopy gmplot
    ```
+   - **OpenCV**: A Python 
    - **Pillow**: A Python Imaging Library (PIL) fork. It adds support for opening, manipulating, and saving many different image file formats.
    - **Geopy**: A Python library for geocoding (converting addresses to coordinates) and reverse geocoding (finding addresses from coordinates).
    - **gmplot**: A Python wrapper for Google Maps API for plotting data on Google Maps.
