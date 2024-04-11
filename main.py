@@ -23,6 +23,8 @@ def getListOfFiles(downloadPath):
 
 def moveFiles(src,dst,file):
 	src = os.path.join(src,file)
+	#shutil.move(src,dst)
+	#delete copy function after done testing
 	shutil.copy2(src,dst)	
 	
 
