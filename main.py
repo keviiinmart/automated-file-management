@@ -10,8 +10,8 @@ downloadPath = downloadPathConstant.downloadFolder
 mediaPath = downloadPathConstant.mediaFolder
 
 #list of media extensions
-videoExtension = ['.webm', '.mpg', '.mp2', '.mpeg', '.mpe', '.mpv', '.ogg', '.mp4', '.m4p', '.m4v', '.avi', '.wmv', '.mov', '.qt', '.flv', '.WEBM', '.MPG', '.MP2', '.MPEG', '.MPE', '.MPV', '.OGG', '.MP4', '.M4P', '.M4V', '.AVI', '.WMV', '.MOV', '.QT', '.FLV']
-imageExtension = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tif', '.tiff', '.webp', '.heic', '.JPG', '.JPEG', '.PNG', '.GIF', '.BMP', '.TIF', '.TIFF', '.WEBP', '.HEIC']
+videoExtension = ['.webm', '.mpg', '.mp2', '.mpeg', '.mpe', '.mpv', '.ogg', '.mp4', '.m4p', '.m4v', '.avi', '.wmv', '.mov', '.qt', '.flv']
+imageExtension = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tif', '.tiff', '.webp', '.heic']
 extensionList = videoExtension + imageExtension 
 
 #check if the download folder has media to move
